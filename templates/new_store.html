@@ -1,0 +1,18 @@
+<doctype html>
+<title>New Store</title>
+<h2>New Store</h2>
+
+{% from "_formhelpers.html" import render_field %}
+<form method=post>
+    <dl>
+        {{ render_field(form.item) }}
+        {{ render_field(form.price) }}
+        {{ render_field(form.quantity) }}
+        {{ render_field(form.store_name) }}
+        {{ render_field(form.address) }}
+        {{ render_field(form.date_to_purchase) }}
+        {{ render_field(form.note) }}
+    </dl>
+    <p><input type=submit value=Submit>
+</form>
+</doctype>
